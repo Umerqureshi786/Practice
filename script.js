@@ -193,5 +193,71 @@
 //     alert("You failed");
 // }
 
+  / var student1 = "Ali";
+// var student2 = "Umar";
+// var student3 = "Usman";
 
+// console.log("var:" , student1,student2,student3);
+
+// var students = ["Ali", "Umar", "Usman"];
+// console.log("Array:", students);
+// document.write(students[2]);
+// alert(students)
+
+// var students=["Rehan", "Farhan"];
+// var student1= prompt("Enter student name");
+
+// students.push(student1)
+// console.log(students);
+
+
+
+// var students=["Rehan", "Farhan","Ali"];
+// students.pop()
+// console.log(students);
+
+
+
+// var students = ["Student1","Student2","Student3"]
+// students.pop()
+
+// console.log(students);
+
+// var myUsers = [];
+// var userName = prompt("User name");
+// myUsers.push("umar");
+// myUsers.push("haider");
+// myUsers.push("salman");
+// myUsers.push(userName)
+// myUsers.unshift("aliiiiii")
+// myUsers.shift()
+
+// console.log(myUsers);
+
+
+// myUsers.pop();
+// console.log(myUsers);
+
+
+// var students = ["ali", "umar", "fazal","new"];
+// students.splice(1,2)
+// // students.splice(1,1,"uzair","haidar")
+
+// console.log(students);
+
+
+
+// var students=["a", "b", "c", "d", "e"];
+// students.push("Z","X");
+// students.pop();
+// students.unshift("G");
+// students.shift();
+// // students.splice(1,2);
+// // students.slice(0,1);
+// console.log(students);
+
+
+var students = ["a", "b", "c", "d", "e", "f"];
+var newArray = students.slice(0,4);
+console.log(newArray);
 
