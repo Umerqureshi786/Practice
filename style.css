@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #8A9A5B;
+    --secondary-color: #BCB88A;
+    --teritary-color: #355E3B;
+}
+
+* {
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+
+.mt-4 {
+    margin-top: 4px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+.p-4{
+    padding: 4px;
+}
+.b-1 {
+    border: 1px solid #fff;
+}
+.br-2{
+    border-radius: 2px;
+}
+.br-4 {
+    border-radius: 4px;
+}
+.br-16 {
+    border-radius: 16px;
+}
+
+/* navbar  */
+nav li {
+    list-style: none;
+    background-color: #fff;
+    transition: transform 2s;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--teritary-color);
+    color: var(--secondary-color);
+    font-size: 1.5em;
+}
+
+/*bottle-wrapper */
+section#bottle-wrapper {
+    background-color: #355E3B;
+    display: flex;
+    justify-content: center;
+}
+
+#bottle-container {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottle-bottom {
+    height: 12em;
+    width: 6em;
+    border-top-right-radius: 4em;
+    border-top-left-radius: 4em;
+    position: relative;
+    overflow: hidden;
+}
+
+#bottle-top {
+    width: 2em;
+    height: 4em;
+    position: relative;
+    bottom: -5px;
+    border-bottom: none;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: #355E3B;
+    z-index: 10;
+}
+
+#bottle-bottom #liquid {
+    background-color: var(--secondary-color);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    animation: liquid 4s ease-in;
+}
+
+#bottle-top #liquid {
+    background-color: var(--secondary-color);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    animation: liquid2 2s ease-in 2s;
+}
+
+
+/* content */
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#content section#content-1 {
+    background-color: var(--secondary-color);
+    width: 48%;
+}
+
+#content section#content-2 {
+    background-color: var(--secondary-color);
+    width: 48%;
+}
+
+/* media queries */
+@media screen and (max-width:550px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-top: 4px;
+        text-align: center;
+        width: 50%;
+    }
+
+    #content section#content-1,
+    #content section#content-2 {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}
+
+@media screen and (max-width : 250px) {
+    nav li {
+        width: 90%;
+    }
+}
+
+@keyframes liquid {
+    0% {
+        height: 0;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    99% {
+        height: 100%;
+    }
+
+}
+
+@keyframes liquid2 {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+
+}
