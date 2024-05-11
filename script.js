@@ -440,3 +440,84 @@ if (myName==="yes"){
 } else {
     console.log("Not valid")
 }
+
+
+
+Practice.......................
+    // alert("Umar");
+
+
+// var questionOne="What is your Name";
+// var defaultAnswer="Rehan";
+// var Name=prompt(questionOne, defaultAnswer);
+// console.log("Name=" + Name);
+
+
+
+// const myArray=["a", "b","c", "d", "e", "f"];
+// myArray[0]=1;
+// myArray[2]=5;
+// myArray[4]=3;
+// myArray[7]=4;
+// myArray.push(8)
+// console.log(myArray[4]);
+
+
+//Push Program
+// const myArray = ["a", "b", "c", "d", "e"];
+
+// function addElement(x) {
+//     const myVar = myArray.length;
+//     myArray[myVar]=x;
+//     console.log(myArray);
+
+// }
+// addElement(5)
+// addElement("Rehan")
+// addElement("Ali")
+
+// const myArray = [1, 2, 3, 4, 5, 6, 7];
+// console.log(myArray.length); // Output: 5
+
+
+//Pop Program
+// const myArray = ["a", "b", "c", "d", "e"];
+
+// function removeElement() {
+//     const lastIndex = myArray.length - 1; // Get the index of the last element
+//     const removedElement = myArray[lastIndex]; // Store the last element to be removed
+//     myArray.length = lastIndex; // Adjust the length of the array to remove the last element
+//     console.log("Removed element:", removedElement);
+//     console.log("Updated Array:", myArray);
+// }
+
+// removeElement();
+// removeElement();
+// removeElement();
+
+
+
+Finding Age:
+const userDetails = {
+    name: "Umar",
+    gender: "Male",
+    dob: "27-06-1998",
+
+    getAge: function () {
+        const currentDate = new Date();
+        const dobDate = new Date(userDetails.dob);
+        console.log(currentDate, "new date", dobDate);
+    },
+};
+userDetails.getAge();
+
+
+
+
+
+
+
+
+
+
+
